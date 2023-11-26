@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body class="bg-black">
+
+    <div class="accordion container mt-5 " id="accordionExample">
+        <div class="accordion-item bg-black">
+          <h2 class="accordion-header  ">
+            <button class="accordion-button bg-black text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Discuss the scope of var,let and const
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show " data-bs-parent="#accordionExample">
+            <div class="accordion-body text-white  text-center">
+              <p> <strong>var :- is not a block level element. It can also be accessed from outside the      block. <br> 
+                let :- is a block level element. It cannot be accessed outside of its block. And blocks can be reassigned inside.<br>
+                const :- This is also a block level element like let. But it cannot be reassigned inside its block either. </strong>  </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item bg-black">
+          <h2 class="accordion-header">
+            <button class="accordion-button bg-black text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+             Tell us the use cases of null and undefined
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body text-white  text-center">
+              <strong>Null :- It is set to null if there is no value of Variables. or a value is set to null <br>
+                Undefined :- It will show undefined if a variable is declared and printed without setting its value.
+                Or if a function declares and does not pass any value as a parameter, it will be undefined. etc. there are many more</strong> 
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item bg-black">
+          <h2 class="accordion-header ">
+            <button class="accordion-button  bg-black text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                What do you mean by REST API?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body text-white text-center ">
+              <strong>REST API stands for Representational State Transfer Application Programming Interface, an architectural style used for web service design. It is used to create web services in a simple manner. It has several features. For example:- <br>
+                1: Stateless Communication:<br>
+                2: Client-Server Architecture:<br>
+                3: Uniform Interface:
+                etc</strong>  
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

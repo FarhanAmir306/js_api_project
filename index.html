@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Api Project</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav>
+      <div
+        class="nav_container container mt-5 d-flex flex-wrap align-items-center justify-content-between"
+      >
+        <img src="./img/Logo.png" alt="" />
+        <button onclick="sortByView()" class="btn btn-secondary sort_btn">
+          Sort by view
+        </button>
+        <button class="btn btn-danger blog_btn">
+          <a class="text-white" target="_blank" href="seconde.html">Blog</a>
+        </button>
+      </div>
+      <hr class="container" />
+    </nav>
+
+    <div
+      class="btn_container container d-flex flax-wrap gap-3 justify-content-center"
+    >
+      <button onclick="display_show(1000)" class="btn btn-success">All</button>
+      <button onclick="display_show(1001)" class="btn btn-success">
+        Music
+      </button>
+      <button onclick="display_show(1003)" class="btn btn-success">
+        Comedy
+      </button>
+      <button onclick="display_show(1005)" class="btn btn-success">
+        Drawing
+      </button>
+    </div>
+
+    <div
+      id="media_container"
+      class="container d-flex align-items-center justify-content-center flex-wrap gap-3"
+    >
+      <div class="card" style="width: 18rem">
+        <img
+          src="https://i.ibb.co/L1b6xSq/shape.jpg"
+          class="card-img-top"
+          alt=""
+        />
+        <div class="card-body">
+          <div class="profile_section mb-3 d-flex align-items-center gap-3">
+            <img
+              class="img-fluid"
+              src="https://i.ibb.co/D9wWRM6/olivia.jpg"
+              id="profile_pic"
+            />
+
+            <div class="card-img-overlay">
+              <p class="card-text text-white">
+                <small>Last updated 3 mins ago</small>
+              </p>
+            </div>
+
+            <h5 class="title">Sticks & Stones</h5>
+          </div>
+          <div>
+            <span class="profile_name">Amy Schumer <span> </span> </span>
+            <p class="view">4.5K views</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="logo_container">
+      <!-- <div class="logo_section">
+        <div class="logo">
+            <img src="./img/Icon.png" alt="">
+        </div>
+        <div class="text">
+            <h1>Oops!!! Sorry ,There is No content here</h1>
+        </div>
+      </div> -->
+    </div>
+
+    <!-- ---js link--- -->
+    <script src="script.js"></script>
+    <!-- ......bootstrap Link...... -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
